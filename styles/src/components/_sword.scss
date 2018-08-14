@@ -1,0 +1,106 @@
+.sword {
+  position: absolute;
+  left: 0;
+  right: 0;
+  animation: swordFalling 0.6s ease-out;
+  bottom: 92px;
+  .handle-wrapper {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+    position: relative;
+    &:before {
+      content: '';
+      height: 35px;
+      width: 40px;
+      background: radial-gradient(lightgrey, grey);
+      display: table;
+      border-radius: 100%;
+      box-shadow: 0px 1px 3px #000;
+      position: absolute;
+      right: 0;
+      left: 0;
+      margin: 0 auto;
+      top: -30px;
+      z-index: -1;
+    }
+    .handle {
+      height: 100%;
+      width: 30px;
+      margin: 0 auto 0 auto;
+      background: #481212;
+      box-shadow: 0px 1px 3px #000;
+      .lace {
+        margin-top: 8px;
+        background: radial-gradient(#b9b7b7,#000000);
+        width: 100%;
+        height: 2px;
+      }
+    }
+    .horizontal-bar {
+      width: 100%;
+      height: 12px;
+      box-shadow: 0px 0px 3px #000;
+      background: linear-gradient(grey, lightgrey, grey);
+      position: relative;
+      border-radius: 10px;
+    }
+  }
+
+  .blade-wrapper {
+    position: relative;
+    top: 10px;
+    z-index: -1;
+    .blade {
+      height: 300px;
+      width: 30px;
+      margin: 0 auto;
+      background: linear-gradient(-90deg, grey, lightgrey, grey)
+    }
+    .blade-hover {
+      width: 6px;
+      position: absolute;
+      margin: 0 auto;
+      left: 0;
+      right: 0;
+      top: 0;
+      height: 319px;
+      border-bottom-left-radius: 100%;
+      border-bottom-right-radius: 100%;
+      background: #ff924c;
+      box-shadow: 0px 0px 2px #ffffff;
+      animation: swordGlowing 3s infinite;
+    }
+    .blade-tip {
+      margin: 0 auto;
+      width: 0px;
+      height: 0;
+      top: 40px;
+      position: relative;
+      &:after,
+      &:before {
+        height: 52px;
+        width: 15px;
+        -webkit-transform: rotate(90deg);
+        transform: rotate(90deg);
+        background: red;
+        position: absolute;
+        z-index: -1;
+        content: '';
+        background: grey;
+      }
+      &:after {
+        transform: skewY(-70deg);
+        left: 0px;
+        top: -69px;
+        background: linear-gradient(-90deg,grey, lightgrey);
+      }
+      &:before {
+        transform: skewY(70deg);
+        left: -15px;
+        top: -69px;
+        background: linear-gradient(-90deg,lightgrey, grey);
+      }
+    }
+  }
+}

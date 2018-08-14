@@ -1,0 +1,150 @@
+.rock {
+  height: 300px;
+  width: 493px;
+  margin: 0 auto;
+  position: absolute;
+  bottom: -28px;
+  left: 0;
+  right: 0;
+  .rock-shade-one {
+    position: absolute;
+    background: #b7b1b1 ;
+    height: 140px;
+    width: 55px;
+    bottom: 0;
+    transform: skewX(10deg) skewY(50deg);
+  }
+  .rock-shade-two {
+    position: absolute;
+    background: #8c8181;
+    height: 140px;
+    width: 55px;
+    bottom: 0;
+    left: -3px;
+    transform: skewX(-16deg) skewY(76deg);
+  }
+  .rock-shade-three {
+    position: absolute;
+    background: #737373;
+    height: 140px;
+    width: 55px;
+    bottom: 0;
+    left: 30px;
+    transform: skewX(-18deg) skewY(48deg);
+  }
+  .rock-shade-four {
+    position: absolute;
+    background: #848484;
+    height: 140px;
+    width: 55px;
+    bottom: 0;
+    left: 44px;
+    transform: skewX(15deg) skewY(75deg);
+  }
+  .rock-shade-five {
+    position: absolute;
+    background: #737373;
+    height: 140px;
+    width: 75px;
+    bottom: 0;
+    left: 86px;
+    transform: skewX(-36deg) skewY(40deg);
+  }
+  .rock-shade-six {
+    position: absolute;
+    background: #504e4e;
+    height: 140px;
+    width: 75px;
+    bottom: 0;
+    left: 86px;
+    transform: skewX(-2deg) skewY(-24deg);
+  }
+  .rock-shade-seven {
+    position: absolute;
+    background: #737373;
+    height: 140px;
+    width: 75px;
+    bottom: 0;
+    left: 171px;
+    transform: skewX(22deg) skewY(-57deg);
+  }
+  .rock-shade-eight {
+    position: absolute;
+    background: #b7b1b1;
+    height: 140px;
+    width: 75px;
+    bottom: 0;
+    left: 171px;
+    transform: skewX(55deg) skewY(-57deg);
+  }
+  .rock-shade-nine {
+    position: absolute;
+    background: #504e4e;
+    height: 140px;
+    width: 100px;
+    bottom: 0;
+    left: 248px;
+    transform: skewX(55deg) skewY(-57deg);
+  }
+  .rock-shade-ten {
+    position: absolute;
+    background: #737373;
+    height: 140px;
+    width: 100px;
+    bottom: 0;
+    left: 268px;
+    transform: skewX(25deg) skewY(-67deg);
+  }
+  .rock-shade-eleven {
+    position: absolute;
+    background: #a7a0a0;
+    height: 100px;
+    width: 380px;
+    bottom: 0;
+    left: 288px;
+    left: 7px;
+  }
+  .rock-shade-tweleve {
+    position: absolute;
+    background: #737373;
+    height: 140px;
+    width: 150px;
+    bottom: 0;
+    left: 300px;
+    transform: skewX(-30deg) skewY(-20deg);
+  }
+  .rock-shade-thirteen {
+    position: absolute;
+    background: #504e4e;
+    height: 140px;
+    width: 100px;
+    bottom: 0;
+    left: 260px;
+    transform: skewX(-180deg) skewY(-60deg);
+  }
+  .rock-shade-fourteen {
+    position: absolute;
+    background: #737373;
+    height: 70px;
+    width: 100px;
+    bottom: 0;
+    left: 260px;
+    transform: skewX(-14deg) skewY(-60deg);
+  }
+  .rock-shade-fifteen {
+    position: absolute;
+    background: #b7b1b1;
+    height: 70px;
+    width: 100px;
+    bottom: 0;
+    left: 280px;
+    transform: skewX(-40deg) skewY(-60deg);
+  }
+  .rock-base {
+    height: 151px;
+    width: 100%;
+    background: white;
+    position: absolute;
+    bottom: -123px;
+  }
+}

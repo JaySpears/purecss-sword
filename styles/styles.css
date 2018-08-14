@@ -1,0 +1,372 @@
+@-webkit-keyframes swordFalling {
+  0% {
+    bottom: 100vh; }
+  40% {
+    bottom: 80vh; }
+  100% {
+    bottom: 92px; } }
+
+@keyframes swordFalling {
+  0% {
+    bottom: 100vh; }
+  40% {
+    bottom: 80vh; }
+  100% {
+    bottom: 92px; } }
+
+@-webkit-keyframes explode {
+  0% {
+    -webkit-box-shadow: 0px 0px 0px 0px #000;
+    box-shadow: 0px 0px 0px 0px #000; }
+  10% {
+    -webkit-box-shadow: 0px 0px 0px 0px #000;
+    box-shadow: 0px 0px 0px 0px #000; }
+  35% {
+    -webkit-box-shadow: 0px 0px 500px 170px #000;
+    box-shadow: 0px 0px 500px 170px #000; }
+  100% {
+    -webkit-box-shadow: 0px 0px 300px 80px #000;
+    box-shadow: 0px 0px 300px 80px #000; } }
+
+@keyframes explode {
+  0% {
+    -webkit-box-shadow: 0px 0px 0px 0px #000;
+    box-shadow: 0px 0px 0px 0px #000; }
+  10% {
+    -webkit-box-shadow: 0px 0px 0px 0px #000;
+    box-shadow: 0px 0px 0px 0px #000; }
+  35% {
+    -webkit-box-shadow: 0px 0px 500px 170px #000;
+    box-shadow: 0px 0px 500px 170px #000; }
+  100% {
+    -webkit-box-shadow: 0px 0px 300px 80px #000;
+    box-shadow: 0px 0px 300px 80px #000; } }
+
+@-webkit-keyframes swordGlowing {
+  0% {
+    background-color: #ff924c; }
+  50% {
+    background-color: lightgrey; }
+  100% {
+    background-color: #ff924c; } }
+
+@keyframes swordGlowing {
+  0% {
+    background-color: #ff924c; }
+  50% {
+    background-color: lightgrey; }
+  100% {
+    background-color: #ff924c; } }
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1;
+  -webkit-font-smoothing: antialiased; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body {
+  margin: 0;
+  overflow: hidden; }
+  body .container {
+    max-width: 700px;
+    margin: 0 auto;
+    height: 100vh; }
+
+.explosion {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  -webkit-animation: explode 5s;
+  animation: explode 5s;
+  -webkit-box-shadow: 0px 0px 300px 80px #000;
+  box-shadow: 0px 0px 300px 80px #000;
+  z-index: -3; }
+
+.rock {
+  height: 300px;
+  width: 493px;
+  margin: 0 auto;
+  position: absolute;
+  bottom: -28px;
+  left: 0;
+  right: 0; }
+  .rock .rock-shade-one {
+    position: absolute;
+    background: #b7b1b1;
+    height: 140px;
+    width: 55px;
+    bottom: 0;
+    -webkit-transform: skewX(10deg) skewY(50deg);
+    transform: skewX(10deg) skewY(50deg); }
+  .rock .rock-shade-two {
+    position: absolute;
+    background: #8c8181;
+    height: 140px;
+    width: 55px;
+    bottom: 0;
+    left: -3px;
+    -webkit-transform: skewX(-16deg) skewY(76deg);
+    transform: skewX(-16deg) skewY(76deg); }
+  .rock .rock-shade-three {
+    position: absolute;
+    background: #737373;
+    height: 140px;
+    width: 55px;
+    bottom: 0;
+    left: 30px;
+    -webkit-transform: skewX(-18deg) skewY(48deg);
+    transform: skewX(-18deg) skewY(48deg); }
+  .rock .rock-shade-four {
+    position: absolute;
+    background: #848484;
+    height: 140px;
+    width: 55px;
+    bottom: 0;
+    left: 44px;
+    -webkit-transform: skewX(15deg) skewY(75deg);
+    transform: skewX(15deg) skewY(75deg); }
+  .rock .rock-shade-five {
+    position: absolute;
+    background: #737373;
+    height: 140px;
+    width: 75px;
+    bottom: 0;
+    left: 86px;
+    -webkit-transform: skewX(-36deg) skewY(40deg);
+    transform: skewX(-36deg) skewY(40deg); }
+  .rock .rock-shade-six {
+    position: absolute;
+    background: #504e4e;
+    height: 140px;
+    width: 75px;
+    bottom: 0;
+    left: 86px;
+    -webkit-transform: skewX(-2deg) skewY(-24deg);
+    transform: skewX(-2deg) skewY(-24deg); }
+  .rock .rock-shade-seven {
+    position: absolute;
+    background: #737373;
+    height: 140px;
+    width: 75px;
+    bottom: 0;
+    left: 171px;
+    -webkit-transform: skewX(22deg) skewY(-57deg);
+    transform: skewX(22deg) skewY(-57deg); }
+  .rock .rock-shade-eight {
+    position: absolute;
+    background: #b7b1b1;
+    height: 140px;
+    width: 75px;
+    bottom: 0;
+    left: 171px;
+    -webkit-transform: skewX(55deg) skewY(-57deg);
+    transform: skewX(55deg) skewY(-57deg); }
+  .rock .rock-shade-nine {
+    position: absolute;
+    background: #504e4e;
+    height: 140px;
+    width: 100px;
+    bottom: 0;
+    left: 248px;
+    -webkit-transform: skewX(55deg) skewY(-57deg);
+    transform: skewX(55deg) skewY(-57deg); }
+  .rock .rock-shade-ten {
+    position: absolute;
+    background: #737373;
+    height: 140px;
+    width: 100px;
+    bottom: 0;
+    left: 268px;
+    -webkit-transform: skewX(25deg) skewY(-67deg);
+    transform: skewX(25deg) skewY(-67deg); }
+  .rock .rock-shade-eleven {
+    position: absolute;
+    background: #a7a0a0;
+    height: 100px;
+    width: 380px;
+    bottom: 0;
+    left: 288px;
+    left: 7px; }
+  .rock .rock-shade-tweleve {
+    position: absolute;
+    background: #737373;
+    height: 140px;
+    width: 150px;
+    bottom: 0;
+    left: 300px;
+    -webkit-transform: skewX(-30deg) skewY(-20deg);
+    transform: skewX(-30deg) skewY(-20deg); }
+  .rock .rock-shade-thirteen {
+    position: absolute;
+    background: #504e4e;
+    height: 140px;
+    width: 100px;
+    bottom: 0;
+    left: 260px;
+    -webkit-transform: skewX(-180deg) skewY(-60deg);
+    transform: skewX(-180deg) skewY(-60deg); }
+  .rock .rock-shade-fourteen {
+    position: absolute;
+    background: #737373;
+    height: 70px;
+    width: 100px;
+    bottom: 0;
+    left: 260px;
+    -webkit-transform: skewX(-14deg) skewY(-60deg);
+    transform: skewX(-14deg) skewY(-60deg); }
+  .rock .rock-shade-fifteen {
+    position: absolute;
+    background: #b7b1b1;
+    height: 70px;
+    width: 100px;
+    bottom: 0;
+    left: 280px;
+    -webkit-transform: skewX(-40deg) skewY(-60deg);
+    transform: skewX(-40deg) skewY(-60deg); }
+  .rock .rock-base {
+    height: 151px;
+    width: 100%;
+    background: white;
+    position: absolute;
+    bottom: -123px; }
+
+.sword {
+  position: absolute;
+  left: 0;
+  right: 0;
+  -webkit-animation: swordFalling 0.6s ease-out;
+  animation: swordFalling 0.6s ease-out;
+  bottom: 92px; }
+  .sword .handle-wrapper {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+    position: relative; }
+    .sword .handle-wrapper:before {
+      content: '';
+      height: 35px;
+      width: 40px;
+      background: radial-gradient(lightgrey, grey);
+      display: table;
+      border-radius: 100%;
+      -webkit-box-shadow: 0px 1px 3px #000;
+      box-shadow: 0px 1px 3px #000;
+      position: absolute;
+      right: 0;
+      left: 0;
+      margin: 0 auto;
+      top: -30px;
+      z-index: -1; }
+    .sword .handle-wrapper .handle {
+      height: 100%;
+      width: 30px;
+      margin: 0 auto 0 auto;
+      background: #481212;
+      -webkit-box-shadow: 0px 1px 3px #000;
+      box-shadow: 0px 1px 3px #000; }
+      .sword .handle-wrapper .handle .lace {
+        margin-top: 8px;
+        background: radial-gradient(#b9b7b7, #000000);
+        width: 100%;
+        height: 2px; }
+    .sword .handle-wrapper .horizontal-bar {
+      width: 100%;
+      height: 12px;
+      -webkit-box-shadow: 0px 0px 3px #000;
+      box-shadow: 0px 0px 3px #000;
+      background: -webkit-gradient(linear, left top, left bottom, from(grey), color-stop(lightgrey), to(grey));
+      background: linear-gradient(grey, lightgrey, grey);
+      position: relative;
+      border-radius: 10px; }
+  .sword .blade-wrapper {
+    position: relative;
+    top: 10px;
+    z-index: -1; }
+    .sword .blade-wrapper .blade {
+      height: 300px;
+      width: 30px;
+      margin: 0 auto;
+      background: -webkit-gradient(linear, right top, left top, from(grey), color-stop(lightgrey), to(grey));
+      background: linear-gradient(-90deg, grey, lightgrey, grey); }
+    .sword .blade-wrapper .blade-hover {
+      width: 6px;
+      position: absolute;
+      margin: 0 auto;
+      left: 0;
+      right: 0;
+      top: 0;
+      height: 319px;
+      border-bottom-left-radius: 100%;
+      border-bottom-right-radius: 100%;
+      background: #ff924c;
+      -webkit-box-shadow: 0px 0px 2px #ffffff;
+      box-shadow: 0px 0px 2px #ffffff;
+      -webkit-animation: swordGlowing 3s infinite;
+      animation: swordGlowing 3s infinite; }
+    .sword .blade-wrapper .blade-tip {
+      margin: 0 auto;
+      width: 0px;
+      height: 0;
+      top: 40px;
+      position: relative; }
+      .sword .blade-wrapper .blade-tip:after, .sword .blade-wrapper .blade-tip:before {
+        height: 52px;
+        width: 15px;
+        -webkit-transform: rotate(90deg);
+        transform: rotate(90deg);
+        background: red;
+        position: absolute;
+        z-index: -1;
+        content: '';
+        background: grey; }
+      .sword .blade-wrapper .blade-tip:after {
+        -webkit-transform: skewY(-70deg);
+        transform: skewY(-70deg);
+        left: 0px;
+        top: -69px;
+        background: -webkit-gradient(linear, right top, left top, from(grey), to(lightgrey));
+        background: linear-gradient(-90deg, grey, lightgrey); }
+      .sword .blade-wrapper .blade-tip:before {
+        -webkit-transform: skewY(70deg);
+        transform: skewY(70deg);
+        left: -15px;
+        top: -69px;
+        background: -webkit-gradient(linear, right top, left top, from(lightgrey), to(grey));
+        background: linear-gradient(-90deg, lightgrey, grey); }

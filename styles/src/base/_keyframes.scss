@@ -1,0 +1,38 @@
+@keyframes swordFalling {
+  0% {
+    bottom: 100vh;
+  }
+  40% {
+    bottom: 80vh;
+  }
+  100% {
+    bottom: 92px;
+  }
+}
+
+@keyframes explode {
+  0% {
+    box-shadow: 0px 0px 0px 0px #000;
+  }
+  10% {
+    box-shadow: 0px 0px 0px 0px #000;
+  }
+  35% {
+    box-shadow: 0px 0px 500px 170px #000;
+  }
+  100% {
+    box-shadow: 0px 0px 300px 80px #000;
+  }
+}
+
+@keyframes swordGlowing {
+  0% {
+    background-color: #ff924c;
+  }
+  50% {
+    background-color: lightgrey;
+  }
+  100% {
+    background-color: #ff924c;
+  }
+}
